@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --platform-aliases-title: #E1E1E6;
+    --platform-aliases-text: #C4C4CC;
+    --neutral-colors-white: #fff;
+    --button-hove-text: #02799D;
+}
+
+body,
+button,
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-size: clamp(40%, 2vw + 1%, 100%);
+    background: url('./assets/mountains-universe-1.jpg') no-repeat center center / cover fixed;
+}
+
+header {
+    height: 7.625rem;
+    padding: 2.5rem 44.9375rem 2.5rem 4.5rem;
+}
+
+header ol {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3.75rem;
+    list-style: none;
+
+}
+
+header ol li a {
+
+    color: var(--platform-aliases-text);
+    text-decoration: none;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.375rem;
+    transition: ease-in-out 200ms;
+}
+
+li a:hover {
+    color: var(--neutral-colors-white);
+    font-weight: 700;
+}
+
+#app {
+    height: calc(100vh - 122px);
+    display: grid;
+    place-content: center;
+
+    position: relative;
+}
+
+h1 {
+    color: var(--platform-aliases-title);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+button {
+    display: inline-flex;
+    padding: .75rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    border-radius: .3125rem;
+    border: .125rem solid #FFF;
+    background: none;
+
+    margin-top: 1.5rem;
+
+    color: var(--neutral-colors-white, #FFF);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: ease-in-out 250ms;
+}
+
+button:hover {
+    background-color: var(--neutral-colors-white);
+    color: var(--button-hove-text);
+}
+
+p {
+    display: flex;
+    justify-content: flex-start;
+    width: 40.5rem;
+    color: var(--platform-aliases-ttulos, #E1E1E6);
+    font-family: Roboto;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.description h1 {
+    position: absolute;
+    top: 4rem;
+    left: 6.25rem;
+
+}
+
+.description p {
+    position: absolute;
+    top: 8.75rem;
+    left: 6.25rem;
+}
+
